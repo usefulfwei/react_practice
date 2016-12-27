@@ -1,0 +1,138 @@
+ul,li,p,button{
+  margin:0;
+  padding:0;
+}
+li{
+  list-style: none;
+}
+body{
+  max-width: 640px;
+  min-width:320px;
+  margin:0 auto;
+  padding:0;
+  color: #333333;
+  font-family: 微软雅黑;
+  button,input{
+    font-family: 微软雅黑;
+  }
+  .todo-cont{
+    position: relative;
+    padding:15px 8px;
+    background: #f1f1f1;
+    .todo-search,.todo-add{
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      width:96%;
+      height:32px;
+      margin:5px 2%;
+      input{
+        float: left;
+        width:220px;
+        width:70%;
+        height:26px;
+        padding: 2px 5px;
+        outline: none;
+        border: 1px solid #C7C7C7;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+        color: green;
+      }
+      a{
+        display: inline-block;
+        text-align: center;
+        width:26px;
+        width:22%;
+        height:26px;
+        padding: 2px 5px;
+        border: 1px solid #C7C7C7;
+        border-left: 0;
+        border-radius: 0 4px 4px 0;
+        img{
+          height:100%;
+          border: none;
+        }
+      }
+    }
+    .todo-add{
+      a{
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #1296db;
+        font-weight: bold;
+      }
+    }
+    .todo-main{
+      width:96%;
+      margin:0 2%;
+      background: #f9f9f9;
+      ul{
+        margin-bottom: 10px;
+        border-top: 1px solid #8dc4e8;
+        border-bottom: 1px solid #8dc4e8;
+      }
+      li{
+        overflow: hidden;
+        margin:0 8px;
+        padding:8px 0;
+        vertical-align: middle;
+        border-bottom:1px solid #e8e7e7;
+        span{
+          vertical-align: middle;
+        }
+        .li-delete,.li-status{
+          float: right;
+          margin-left:6px;
+          padding:4px 6px;
+          vertical-align: middle;
+          cursor: pointer;
+          color: #fff;
+          background-color: #5cb85c;
+          border-color: #4cae4c;
+          border-radius: 4px;
+          border: 1px solid transparent;
+          outline: none;
+        }
+        .li-delete{
+          margin-left: 10px;
+          background-color: #f0ad4e;
+          border-color: #eea236;
+        }
+        .li-status-no{
+          background-color: #d9534f;
+          border-color: #d43f3a;
+        }
+      }
+      .main-status{
+        position: relative;
+        overflow: hidden;
+        margin-top:5px;
+        padding:10px 8px;
+        background: #eadefe;
+        vertical-align: middle;
+        p{
+          overflow: hidden;
+          vertical-align: middle;
+          a{vertical-align: middle;}
+          span{
+            display: inline-block;
+            margin:0 3px;
+            color: #ff4426;
+          }
+          button{
+            float: right;
+            padding:4px 6px;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #fff;
+            border: 1px solid transparent;
+            outline: none;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+          }
+        }
+      }
+    }
+  }
+}
