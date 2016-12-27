@@ -1,0 +1,1 @@
+window.WEBPACK_ASSETS = {"commons":{"js":"/static/commons.388a46de6314cf1de955.bundle.js"},"index":{"js":"/static/index.388a46de6314cf1de955.bundle.js"}}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Webpack Demo</title>
+  <style type="text/css">
+    .example-enter {
+      opacity: 0.01;
+      transition: opacity .1s ease-in;
+    }
+
+    .example-enter.example-enter-active {
+      opacity: 1;
+    }
+
+    .example-leave {
+      opacity: 1;
+      transition: opacity .1s ease-in;
+    }
+
+    .example-leave.example-leave-active {
+      opacity: 0.01;
+    }
+  </style>
+</head>
+<body>
+<script>
+  // webpack.assets.js 是总的入口文件
+  document.write('<script type="text/javascript" src="./build/webpack.assets.js?v=' + (new Date().getTime()) + '"><\/script>');
+</script>
+<script>
+  // 必须要等 webpack.assets.js 加载完后才会有 WEBPACK_ASSETS 变量
+  document.write('<script type="text/javascript" src=".' + window.WEBPACK_ASSETS.commons.js + '"><\/script>');
+  document.write('<script type="text/javascript" src=".' + window.WEBPACK_ASSETS.index.js + '"><\/script>');
+</script>
+
+</body>
+</html>
